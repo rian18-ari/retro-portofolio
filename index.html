@@ -81,8 +81,8 @@
                 </div>
               </div>
               <div class="card-content">
-                <img src="./WhatsApp Image 2025-03-27 at 09.13.30.jpeg" alt="" height="100">
-                <h3>Rian Fikri</h3>
+                <div class="profile-image"></div>
+                <h3>About Me</h3>
                 <p>Frontend Developer</p>
                 <div class="flip-hint">(Click to flip)</div>
               </div>
@@ -106,6 +106,8 @@
                 <ul class="skill-list">
                   <li><div class="bullet"></div>HTML</li>
                   <li><div class="bullet"></div>CSS</li>
+                  <li><div class="bullet"></div>JavaScript</li>
+                  <li><div class="bullet"></div>UI/UX Design</li>
                 </ul>
                 <div class="flip-hint">(Click to flip back)</div>
               </div>
@@ -136,7 +138,7 @@
               
               <section class="content-section">
                 <h2 class="section-title yellow-bg">About Me</h2>
-                <p>Welcome to my retro-inspired website! Hello, I'm Rian. a developer who loves creating unique web experiences that blend nostalgia with modern functionality.</p>
+                <p>Welcome to my retro-inspired website! I'm a developer who loves creating unique web experiences that blend nostalgia with modern functionality.</p>
               </section>
               
               <section class="content-section">
@@ -160,11 +162,11 @@
                 <div class="contact-info">
                   <div class="contact-item">
                     <div class="contact-bullet teal-bg"></div>
-                    <span>email: fikririan16@gmail.com</span>
+                    <span>email@example.com</span>
                   </div>
                   <div class="contact-item">
                     <div class="contact-bullet yellow-bg"></div>
-                    <span>github: rian18-ari</span>
+                    <span>@username</span>
                   </div>
                 </div>
               </section>
@@ -189,8 +191,7 @@
                 </div>
               </div>
               <div class="card-content">
-                <img src="./WhatsApp Image 2025-03-27 at 09.13.30.jpeg" alt="" height="100"
-                >
+                <div class="profile-image"></div>
                 <h3>Contact</h3>
                 <p>Get in touch</p>
                 <div class="flip-hint">(Click to flip)</div>
@@ -213,8 +214,10 @@
               <div class="card-content">
                 <h3>Links</h3>
                 <ul class="skill-list">
-                  <li><div class="bullet"></div>fikririan16@gmail.com</li>
-                  <li><div class="bullet"></div><a href="https://github.com/rian18-ari">rian18-ari</a></li>
+                  <li><div class="bullet"></div>GitHub</li>
+                  <li><div class="bullet"></div>LinkedIn</li>
+                  <li><div class="bullet"></div>Twitter</li>
+                  <li><div class="bullet"></div>Email</li>
                 </ul>
                 <div class="flip-hint">(Click to flip back)</div>
               </div>
@@ -225,23 +228,23 @@
     </main>
   </div>
 
-  <script>
-    // JavaScript sederhana untuk flip card
-    document.querySelectorAll('.profile-card').forEach(card => {
-      card.addEventListener('click', function() {
-        this.querySelector('.card-inner').classList.toggle('is-flipped');
-      });
-    });
-
-    // JavaScript untuk navigasi
-    document.querySelectorAll('.nav-menu li').forEach(item => {
-      item.addEventListener('click', function() {
-        document.querySelectorAll('.nav-menu li').forEach(i => {
-          i.classList.remove('active');
+    <script>
+      // JavaScript sederhana untuk flip card
+      document.querySelectorAll(".profile-card").forEach((card) => {
+        card.addEventListener("click", function () {
+          this.querySelector(".card-inner").classList.toggle("is-flipped");
         });
-        this.classList.add('active');
       });
-    });
-  </script>
-</body>
+
+      // JavaScript untuk navigasi
+      document.querySelectorAll(".nav-menu li").forEach((item) => {
+        item.addEventListener("click", function () {
+          document.querySelectorAll(".nav-menu li").forEach((i) => {
+            i.classList.remove("active");
+          });
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
 </html>
